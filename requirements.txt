@@ -11,3 +11,8 @@ seaborn==0.13.2
 # Flask Web Application
 Flask==3.1.2
 gunicorn==23.0.0
+
+# Notebook & Tooling
+jupyterlab==4.3.4
+ipykernel==6.29.5
+ipython==8.28.0

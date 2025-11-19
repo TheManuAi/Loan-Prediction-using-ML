@@ -1,0 +1,224 @@
+/* Neo-Brutalism Theme - Classic Noir */
+:root {
+  --bg-color: #0f0f0f;
+  --card-bg: #f5f5f5;
+  --accent-primary: #f0c808;
+  --accent-secondary: #1c1c1c;
+  --text-color: #1a1a1a;
+  --muted-color: #555;
+  --border-color: #000;
+  --button-color: #2a2a2a;
+  --approved-color: #8bc34a;
+  --rejected-color: #f44336;
+  --border-width: 3px;
+  --shadow-offset: 6px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: var(--card-bg);
+  padding: 40px;
+  border: var(--border-width) solid var(--border-color);
+  outline: 4px solid #ffffff;
+  outline-offset: 6px;
+  box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--border-color);
+}
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  background: var(--accent-secondary);
+  color: var(--accent-primary);
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  transform: rotate(-1deg);
+}
+
+.subtitle {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--muted-color);
+}
+
+h2 {
+  font-size: 1.5rem;
+  background: var(--accent-primary);
+  color: #1c1c1c;
+  border: var(--border-width) solid var(--border-color);
+  padding: 10px;
+  display: inline-block;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 4px 4px 0 var(--border-color);
+}
+
+#credit-helper {
+  margin-bottom: 0.3rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 1rem;
+  background: #fff;
+  border: var(--border-width) solid var(--border-color);
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1.35rem;
+  transition: all 0.1s;
+}
+
+.helper-text,
+.info-text {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 1.15rem;
+  line-height: 1.4;
+  color: var(--muted-color);
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  background: var(--accent-primary);
+  box-shadow: 4px 4px 0 var(--border-color);
+  transform: translate(-2px, -2px);
+}
+
+button {
+  width: 100%;
+  padding: 1.2rem;
+  margin-top: 2rem;
+  background: var(--button-color);
+  border: var(--border-width) solid var(--border-color);
+  color: var(--accent-primary);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2.25rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--border-color);
+  transition: all 0.1s;
+}
+
+button:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 4px 4px 0 var(--border-color);
+}
+button:active {
+  transform: translate(6px, 6px);
+  box-shadow: 0 0 0 var(--border-color);
+}
+
+#result {
+  margin-top: 2rem;
+  padding: 2rem;
+  border: var(--border-width) solid var(--border-color);
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.5rem;
+  display: none;
+  box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--border-color);
+}
+
+.approved {
+  background-color: var(--approved-color);
+  color: #123812;
+}
+.rejected {
+  background-color: var(--rejected-color);
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+  .container {
+    margin: 20px auto;
+    padding: 32px 26px;
+    outline-width: 3px;
+    outline-offset: 4px;
+  }
+  h1 {
+    font-size: 2.6rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  label {
+    font-size: 1.35rem;
+  }
+  input,
+  select {
+    font-size: 1.25rem;
+    padding: 0.95rem;
+  }
+  button {
+    font-size: 1.8rem;
+    padding: 1.1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+  .container {
+    margin: 10px auto;
+    padding: 22px 18px;
+    outline-width: 2px;
+    outline-offset: 3px;
+  }
+  h1 {
+    font-size: 2.3rem;
+    padding: 8px;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  label {
+    font-size: 1.25rem;
+  }
+  input,
+  select {
+    font-size: 1.2rem;
+    padding: 0.95rem;
+  }
+  .helper-text,
+  .info-text {
+    font-size: 1.1rem;
+  }
+  button {
+    font-size: 1.7rem;
+    padding: 1.05rem;
+  }
+}

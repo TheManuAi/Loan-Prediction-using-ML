@@ -11,17 +11,17 @@ DV_FILE = 'dv.pkl'
 
 # XGBoost parameters 
 params = {
-    'n_estimators': 300,
-    'max_depth': 6,
-    'learning_rate': 0.1,
-    'subsample': 0.8,
-    'colsample_bytree': 0.8,
+    'n_estimators': 50,
+    'max_depth': 3,
+    'learning_rate': 0.2,
+    'subsample': 0.6,
+    'colsample_bytree': 0.9,
     'min_child_weight': 1,
     'gamma': 0,
     'random_state': SEED,
     'eval_metric': 'logloss'
 }
-
+\
 
 df = pd.read_csv('loan_data.csv')
 

@@ -1,7 +1,5 @@
 # Loan Prediction using Machine Learning
 
-![Loan Prediction](./static/loan_icon.png)
-
 A comprehensive machine learning project for predicting loan default risk using customer financial and demographic data. This project implements multiple ML models with hyperparameter tuning and deploys the best model as a web service using Flask and Docker.
 
 **Live Demo:**
@@ -98,11 +96,11 @@ The training logic is exported to `train.py` for reproducibility.
 ├── predict.py                # Script to load model and test predictions
 ├── app.py                    # Flask web application for serving predictions
 ├── requirements.txt          # Project dependencies
-├── Dockerfile               # Docker configuration for containerization
-├── loan_data.csv            # Dataset file
-├── xgb_model.pkl            # Trained XGBoost model artifact
-├── dv.pkl                   # DictVectorizer artifact
-└── static/ and templates/                 # Flask static and template files
+├── Dockerfile                # Docker configuration for containerization
+├── loan_data.csv             # Dataset file
+├── xgb_model.pkl             # Trained XGBoost model artifact
+├── dv.pkl                    # DictVectorizer artifact
+└── static/ and templates/    # Flask static and template files
 ```
 
 ## 6. Installation & Reproducibility
@@ -123,10 +121,10 @@ Follow these steps to reproduce the project locally:
     python -m venv venv
 
     # Activate venv
-    # On Linux/Mac:
-    source venv/bin/activate
     # On Windows:
-    # venv\Scripts\activate
+    venv\Scripts\activate
+    # On Linux/Mac:
+    # source venv/bin/activate
     ```
 
 3.  **Install Dependencies**:
@@ -134,7 +132,7 @@ Follow these steps to reproduce the project locally:
     pip install -r requirements.txt
     ```
 
-## Usage
+### Usage
 
 1.  **Train the Model**:
     Run the training script to generate the model artifacts (`xgb_model.pkl` and `dv.pkl`).
@@ -149,7 +147,7 @@ Follow these steps to reproduce the project locally:
     python predict.py
     ```
 
-## Model Deployment
+### Model Deployment
 
 The model is served via a **Flask API**.
 
